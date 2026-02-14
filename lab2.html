@@ -15,64 +15,109 @@
 
     <body>
 
-        <img src="img/laguna-panoramic.jpg"
-            alt="Panoramic view of lake Laguna Brava"
-            title="Laguna Brava Lake"
-            width="1500"
-            height="300">
+        <!-- Task 2: Header semantic tag -->
+        <header>
+            <img src="img/laguna-panoramic.jpg"
+                alt="Panoramic view of lake Laguna Brava"
+                title="Laguna Brava Lake"
+                width="1500"
+                height="300">
 
-        <h1>Things to Do in Laguna Brava</h1>
-        <p>Discover the best things to do in Laguna Brava and explore activities offered by local communities around the lake.</p>
+            <h1>Things to Do in Laguna Brava</h1>
+            <p>
+                Discover the best things to do in Laguna Brava and explore activities offered by local communities around the lake.
+            </p>
 
-        <!-- Activities description -->
-        <h2>Activities</h2>
-        <p>
-            The Mayan communities of the
-            <a href="https://en.wikipedia.org/wiki/Chuj_people">Chuj ethnicity</a>
-            settled around the lake offer several activities that allow visitors to enjoy Laguna Brava's natural beauty.
-            If you're looking for exciting <strong>things to do in Laguna Brava</strong>, these guided eco-adventures are a perfect choice.
-        </p>
+            <!-- Task 8 (Optional): Navigation menu -->
+            <nav>
+                <ul>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#communities">The Local Communities</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <!-- The Lake Challenge Activity -->
-        <h3>The Lake Challenge</h3>
-        <p>
-            Put your strengths to work by crossing four kilometers in a kayak guided by a local expert.
-            This adventure is physically demanding and recommended only for visitors in excellent physical condition.
-        </p>
+        <!-- Task 2: Main semantic tag -->
+        <main>
 
-        <ul>
-            <li>Duration: 5 hours approx.</li>
-            <li>Price: USD 50.</li>
-            <li>Minimum: 2 pax</li>
-        </ul>
+            <!-- Task 3: Section for activities -->
+            <section id="activities">
+                <h2>Activities</h2>
 
-        <img src="img/kayak-450x254.jpg"
-            alt="Lake challenge kayak on Laguna Brava"
-            title="Kayak on Laguna Brava"
-            width="450"
-            height="254">
+                <!-- Task 3: Section for local communities description -->
+                <section id="communities">
+                    <h2>The Local Communities</h2>
+                    <p>
+                        The Mayan communities of the
+                        <a href="https://en.wikipedia.org/wiki/Chuj_people">Chuj ethnicity</a>
+                        settled around the lake offer several activities that allow visitors to enjoy Laguna Brava's natural beauty.
+                        If you're looking for exciting <strong>things to do in Laguna Brava</strong>, these guided eco-adventures are a perfect choice.
+                        They believe that visitors and <em>responsible ecotourism practices</em> are essential to support the development of their communities.
+                    </p>
+                </section>
 
-        <hr>
+                <!-- Task 5: Article for a guided visit option -->
+                <article>
+                    <h3>The Lake Challenge</h3>
 
-        <h4>Have you traveled to Laguna Brava?</h4>
-        <h5>We want to know your experiences.</h5>
+                    <p>
+                        Put your strengths to work by crossing four kilometers in a kayak guided by a local expert.
+                        This adventure is physically demanding and recommended only for visitors in excellent physical condition.
+                    </p>
 
-        <!-- Visitor Experience Form -->
-        <form>
-            <label for="name">Name: </label>
-            <input type="text" name="name" id="name" placeholder="Write your name">
-            <br><br>
+                    <p>
+                        <strong>In both activities, members of the Laguna Brava community provide life vests and safety guidance before you begin.</strong>
+                    </p>
 
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="email" placeholder="Write your email">
-            <br><br>
+                    <ul>
+                        <li>Duration: 5 hours approx.</li>
+                        <li>Price: USD 50.</li>
+                        <li>Minimum: 2 pax</li>
+                    </ul>
 
-            <label for="experience">Experience: </label>
-            <textarea name="experience" id="experience" placeholder="Please share with us your experience." rows="5" cols="50"></textarea>
-            <br><br>
+                    <!-- Task 7: Figure + caption -->
+                    <figure>
+                        <img src="img/kayak-450x254.jpg"
+                            alt="Lake challenge kayak on Laguna Brava"
+                            title="Kayak on Laguna Brava"
+                            width="450"
+                            height="254">
+                        <figcaption>Cross the four kilometers in a kayak.</figcaption>
+                    </figure>
+                </article>
+            </section>
 
-            <input type="submit" value="Submit">
-        </form>
+            <hr>
+
+            <!-- Task 4: Aside for side content (form) -->
+            <aside>
+                <h4>Have you traveled to Laguna Brava?</h4>
+                <h5>We want to know your experiences.</h5>
+
+                <!-- A form asking for page viewer's experiences -->
+                <form>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Write your name">
+                    <br><br>
+
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Write your email">
+                    <br><br>
+
+                    <label for="experience">Experience: </label>
+                    <textarea name="experience" id="experience" placeholder="Please share with us your experience." rows="5" cols="50"></textarea>
+                    <br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </aside>
+
+        </main>
+
+        <!-- Task 2: Footer semantic tag -->
+        <footer>
+            &copy; 2023 Laguna Brava Ecotourism
+        </footer>
 
     </body>
 </html>
